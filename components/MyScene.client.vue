@@ -4,12 +4,12 @@
 
 		<OrbitControls :enabled="config.orbitControlsEnabled" />
 
-		<SampleDonut />
+		<SampleDonut :torusArgs="[1, 0.5, 16, 32]" :torusColor="'green'" />
 
 	</TresCanvas>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { OrbitControls } from '@tresjs/cientos'
 
 const config = reactive({
